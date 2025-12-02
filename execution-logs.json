@@ -1,0 +1,1210 @@
+{
+	"id": "5ea4c6a4-6025-4e7d-bb01-d034109e0757",
+	"name": "Fsoal",
+	"timestamp": "2025-12-02T19:59:35.437Z",
+	"collection_id": "48422568-90bbda95-874c-42af-be03-9e8e96410d75",
+	"folder_id": 0,
+	"environment_id": "48422568-2d0801f2-de75-4f59-b275-b3ffe4c87c83",
+	"totalPass": 60,
+	"delay": 0,
+	"persist": true,
+	"status": "error",
+	"startedAt": "2025-12-02T19:58:42.866Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "df83d6e8-f48d-48f8-a6c1-c960a1ebaf39",
+			"name": "register",
+			"url": "fsoal.sys-web.net/api/v1/auth/register",
+			"time": 1166,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1166
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "e23fffd0-31dd-421d-8925-514ae02ce576",
+			"name": "login",
+			"url": "fsoal.sys-web.net/api/v1/auth/login",
+			"time": 1148,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1148
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "d9ec54c7-e0e5-4ac9-8686-ca996e5b7051",
+			"name": "logout",
+			"url": "fsoal.sys-web.net/api/v1/auth/logout",
+			"time": 1831,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1831
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "90501888-9213-4845-bb42-a8a3b0646132",
+			"name": "send_otp",
+			"url": "fsoal.sys-web.net/api/v1/auth/send_otp",
+			"time": 1092,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": false,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1092
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": false,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "81e04ffa-dcc1-45c6-9bcb-49838b5605b0",
+			"name": "verify_otp",
+			"url": "fsoal.sys-web.net/api/v1/auth/verify_otp",
+			"time": 831,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				831
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "47c8cade-feab-4cbb-8e8e-eba06d38014b",
+			"name": "get_profile",
+			"url": "fsoal.sys-web.net/api/v1/auth/profile",
+			"time": 1479,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1479
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "0561b78a-6d0c-47c2-b748-f8b5a80bcad3",
+			"name": "edit_profile",
+			"url": "fsoal.sys-web.net/api/v1/auth/profile/edit",
+			"time": 1350,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1350
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "83ce0d86-30b5-48a1-8941-10d29779f94e",
+			"name": "forgot_password",
+			"url": "fsoal.sys-web.net/api/v1/auth/forgot_password",
+			"time": 976,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				976
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "523fdad6-9b19-4197-b1d3-db5a0a83cf85",
+			"name": "edit_password",
+			"url": "fsoal.sys-web.net/api/v1/auth/edit_password",
+			"time": 4483,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4483
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": false
+				}
+			]
+		},
+		{
+			"id": "b0bdffcf-16fb-4e78-841e-e137f5e27edc",
+			"name": "stages_index",
+			"url": "fsoal.sys-web.net/api/v1/stages",
+			"time": 959,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				959
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "6d075f96-ccbc-406f-8bcb-cae3bc046cf3",
+			"name": "stages_show",
+			"url": "fsoal.sys-web.net/api/v1/stages/1",
+			"time": 655,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				655
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "cfda8c2e-69bf-4330-9f3c-ec8b29d25f9e",
+			"name": "curriculums_index",
+			"url": "fsoal.sys-web.net/api/v1/curriculums",
+			"time": 1260,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1260
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "4aeb80c4-a67c-4c3b-ad9b-386ab6bbc0fd",
+			"name": "curriculums_show",
+			"url": "fsoal.sys-web.net/api/v1/curriculums/1",
+			"time": 681,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				681
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "7671806c-0b8f-403b-98be-0f2cdf3c94e6",
+			"name": "countries_cities_index",
+			"url": "fsoal.sys-web.net/api/v1/countries_cities",
+			"time": 700,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				700
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "f97cfe95-866e-4802-807d-993d63288b81",
+			"name": "countries_cities_show",
+			"url": "fsoal.sys-web.net/api/v1/countries_cities/1",
+			"time": 680,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				680
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "db343bb3-a53e-4fa8-b9b8-0bb0f1d52fcf",
+			"name": "experiences_per_teacher",
+			"url": "fsoal.sys-web.net/api/v1/experiences/3",
+			"time": 795,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				795
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "4f7cefab-1796-4e7f-bf64-5390800e4891",
+			"name": "reviews_per_user",
+			"url": "fsoal.sys-web.net/api/v1/reviews/3",
+			"time": 2940,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": false,
+				"Response time is less than 2000ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 2000ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2940
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": false,
+					"Response time is less than 2000ms": false
+				}
+			]
+		},
+		{
+			"id": "309fc6a5-83a2-4f0c-92f9-d55f83825d45",
+			"name": "classes_index",
+			"url": "fsoal.sys-web.net/api/v1/classes/package",
+			"time": 1073,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1073
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "3402c7a6-de08-4ae2-8eaf-60aeeb3dcd3b",
+			"name": "classes_show",
+			"url": "fsoal.sys-web.net/api/v1/classes/package/9",
+			"time": 733,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				733
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "9405e1d9-1883-4a69-8875-3158eb4e21c7",
+			"name": "enrollments_index",
+			"url": "fsoal.sys-web.net/api/v1/enrollments/private",
+			"time": 1450,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1450
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "ee522726-6e89-4685-816b-e238f4353f08",
+			"name": "register",
+			"url": "fsoal.sys-web.net/api/v1/auth/register",
+			"time": 627,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				627
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "1da2dcfb-abe8-4c5e-8ef6-bad189ae2216",
+			"name": "login",
+			"url": "fsoal.sys-web.net/api/v1/auth/login",
+			"time": 934,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				934
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "8fe7238c-a7f2-47a9-9c1c-369bc79ff3f1",
+			"name": "logout",
+			"url": "fsoal.sys-web.net/api/v1/auth/logout",
+			"time": 1512,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1512
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "4c0ac414-7dcd-48db-afee-4a38a374a3ad",
+			"name": "send_otp",
+			"url": "fsoal.sys-web.net/api/v1/auth/send_otp",
+			"time": 1990,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1990
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "dc13a9ea-c7cf-426e-9556-5e01c1efd35e",
+			"name": "verify_otp",
+			"url": "fsoal.sys-web.net/api/v1/auth/verify_otp",
+			"time": 698,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				698
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "596e4e15-c112-40db-af73-cee25f7cf53d",
+			"name": "get_profile",
+			"url": "fsoal.sys-web.net/api/v1/auth/profile",
+			"time": 686,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				686
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "64630499-d1b5-4317-907d-1e2eca6fbef7",
+			"name": "edit_profile",
+			"url": "fsoal.sys-web.net/api/v1/auth/profile/edit",
+			"time": 753,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				753
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "ce813db5-2aa7-4592-ac5a-52f808a1c3d3",
+			"name": "forgot_password",
+			"url": "fsoal.sys-web.net/api/v1/auth/forgot_password",
+			"time": 735,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				735
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "61e9ce7d-d754-4b44-9310-50c3bdc407a0",
+			"name": "edit_password",
+			"url": "fsoal.sys-web.net/api/v1/auth/edit_password",
+			"time": 1541,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1541
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "6a33cc55-9e54-48f5-b88e-c262ec2e7d6a",
+			"name": "stages_index",
+			"url": "fsoal.sys-web.net/api/v1/stages",
+			"time": 988,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				988
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "826814eb-b633-4562-a328-3e35761183aa",
+			"name": "stages_show",
+			"url": "fsoal.sys-web.net/api/v1/stages/1",
+			"time": 722,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				722
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "9647fbc9-9bc4-47ea-9094-3be6ae13f547",
+			"name": "curriculums_index",
+			"url": "fsoal.sys-web.net/api/v1/curriculums",
+			"time": 677,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201, or 204": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201, or 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				677
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201, or 204": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 38145,
+	"collection": {
+		"requests": [
+			{
+				"id": "df83d6e8-f48d-48f8-a6c1-c960a1ebaf39",
+				"method": "POST"
+			},
+			{
+				"id": "e23fffd0-31dd-421d-8925-514ae02ce576",
+				"method": "POST"
+			},
+			{
+				"id": "d9ec54c7-e0e5-4ac9-8686-ca996e5b7051",
+				"method": "POST"
+			},
+			{
+				"id": "90501888-9213-4845-bb42-a8a3b0646132",
+				"method": "POST"
+			},
+			{
+				"id": "81e04ffa-dcc1-45c6-9bcb-49838b5605b0",
+				"method": "POST"
+			},
+			{
+				"id": "47c8cade-feab-4cbb-8e8e-eba06d38014b",
+				"method": "GET"
+			},
+			{
+				"id": "0561b78a-6d0c-47c2-b748-f8b5a80bcad3",
+				"method": "POST"
+			},
+			{
+				"id": "83ce0d86-30b5-48a1-8941-10d29779f94e",
+				"method": "POST"
+			},
+			{
+				"id": "523fdad6-9b19-4197-b1d3-db5a0a83cf85",
+				"method": "POST"
+			},
+			{
+				"id": "b0bdffcf-16fb-4e78-841e-e137f5e27edc",
+				"method": "GET"
+			},
+			{
+				"id": "6d075f96-ccbc-406f-8bcb-cae3bc046cf3",
+				"method": "GET"
+			},
+			{
+				"id": "cfda8c2e-69bf-4330-9f3c-ec8b29d25f9e",
+				"method": "GET"
+			},
+			{
+				"id": "4aeb80c4-a67c-4c3b-ad9b-386ab6bbc0fd",
+				"method": "GET"
+			},
+			{
+				"id": "7671806c-0b8f-403b-98be-0f2cdf3c94e6",
+				"method": "GET"
+			},
+			{
+				"id": "f97cfe95-866e-4802-807d-993d63288b81",
+				"method": "GET"
+			},
+			{
+				"id": "db343bb3-a53e-4fa8-b9b8-0bb0f1d52fcf",
+				"method": "GET"
+			},
+			{
+				"id": "4f7cefab-1796-4e7f-bf64-5390800e4891",
+				"method": "GET"
+			},
+			{
+				"id": "309fc6a5-83a2-4f0c-92f9-d55f83825d45",
+				"method": "GET"
+			},
+			{
+				"id": "3402c7a6-de08-4ae2-8eaf-60aeeb3dcd3b",
+				"method": "GET"
+			},
+			{
+				"id": "9405e1d9-1883-4a69-8875-3158eb4e21c7",
+				"method": "GET"
+			},
+			{
+				"id": "ee522726-6e89-4685-816b-e238f4353f08",
+				"method": "POST"
+			},
+			{
+				"id": "1da2dcfb-abe8-4c5e-8ef6-bad189ae2216",
+				"method": "POST"
+			},
+			{
+				"id": "8fe7238c-a7f2-47a9-9c1c-369bc79ff3f1",
+				"method": "POST"
+			},
+			{
+				"id": "4c0ac414-7dcd-48db-afee-4a38a374a3ad",
+				"method": "POST"
+			},
+			{
+				"id": "dc13a9ea-c7cf-426e-9556-5e01c1efd35e",
+				"method": "POST"
+			},
+			{
+				"id": "596e4e15-c112-40db-af73-cee25f7cf53d",
+				"method": "GET"
+			},
+			{
+				"id": "64630499-d1b5-4317-907d-1e2eca6fbef7",
+				"method": "POST"
+			},
+			{
+				"id": "ce813db5-2aa7-4592-ac5a-52f808a1c3d3",
+				"method": "POST"
+			},
+			{
+				"id": "61e9ce7d-d754-4b44-9310-50c3bdc407a0",
+				"method": "POST"
+			},
+			{
+				"id": "6a33cc55-9e54-48f5-b88e-c262ec2e7d6a",
+				"method": "GET"
+			},
+			{
+				"id": "826814eb-b633-4562-a328-3e35761183aa",
+				"method": "GET"
+			},
+			{
+				"id": "9647fbc9-9bc4-47ea-9094-3be6ae13f547",
+				"method": "GET"
+			},
+			{
+				"id": "f3fa3248-81bf-4794-9e0a-122ff0075be5",
+				"method": "GET"
+			}
+		]
+	}
+}

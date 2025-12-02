@@ -1,0 +1,1497 @@
+{
+	"info": {
+		"_postman_id": "90bbda95-874c-42af-be03-9e8e96410d75",
+		"name": "Fsoal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48422568",
+		"_collection_link": "https://mahmoudsami290-677530.postman.co/workspace/Students-Arena~a364ee4b-bdb4-4f57-b781-9e3296bb9e8e/collection/48422568-90bbda95-874c-42af-be03-9e8e96410d75?action=share&source=collection_link&creator=48422568"
+	},
+	"item": [
+		{
+			"name": "local",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "student",
+											"type": "text"
+										},
+										{
+											"key": "full_name",
+											"value": "Api Student",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "12345888",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "Abc_12345678",
+											"type": "text"
+										},
+										{
+											"key": "date_of_birth",
+											"value": "2000-01-01",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "curriculum_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "stage_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "img",
+											"type": "file",
+											"src": "/C:/Users/Ammar/Downloads/نبذة_عن_كتاب_شرح_ابن_عقيل_على_ألفية_ابن_مالك.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/register",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"12345678\",\r\n    \"password\": \"Abc_12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/login",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/logout",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "send_otp",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/send_otp",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"send_otp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "verify_otp",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/verify_otp",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"verify_otp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get_profile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/profile",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit_profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"full_name\": \"Ammar Gohar\",\r\n    \"stage_id\": \"1\",\r\n    \"curriculum_id\": \"1\",\r\n    \"gender\": \"male\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/profile/edit",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"profile",
+										"edit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "forgot_password",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/forgot_password",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"forgot_password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit_password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"12345678\",\r\n    \"password\": \"Abc_12345678\",\r\n    \"password_confirmation\": \"Abc_12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_local}}/auth/edit_password",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"auth",
+										"edit_password"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Stages",
+					"item": [
+						{
+							"name": "stages_index",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_local}}/stages",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"stages"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "stages_show",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_local}}/stages/1",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"stages",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Curriculums",
+					"item": [
+						{
+							"name": "curriculums_index",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_local}}/curriculums",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"curriculums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "curriculums_show",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_local}}/curriculums/1",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"curriculums",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Country_City",
+					"item": [
+						{
+							"name": "countries_cities_index",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_local}}/countries_cities",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"countries_cities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "countries_cities_show",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "lang",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_local}}/countries_cities/1",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"countries_cities",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Experiences",
+					"item": [
+						{
+							"name": "experiences_per_teacher",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_local}}/experiences/3",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"experiences",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reviews",
+					"item": [
+						{
+							"name": "reviews_per_user",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_local}}/reviews/3",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"reviews",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Classes",
+					"item": [
+						{
+							"name": "classes_index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"student\",\r\n    \"full_name\": \"Api Student\",\r\n    \"phone\": \"12345678\",\r\n    \"password\": \"Abc_12345678\",\r\n    \"date_of_birth\": \"2000-01-01\",\r\n    \"gender\": \"male\",\r\n    \"country_id\": \"1\",\r\n    \"stage_id\": \"1\"\r\n}"
+								},
+								"url": {
+									"raw": "{{url_local}}/classes/package",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"classes",
+										"package"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "classes_show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_local}}/classes/package/9",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"classes",
+										"package",
+										"9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "enrollments_index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_local}}/enrollments/private",
+									"host": [
+										"{{url_local}}"
+									],
+									"path": [
+										"enrollments",
+										"private"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "online",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "student",
+											"type": "text"
+										},
+										{
+											"key": "full_name",
+											"value": "Api Student",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "12344778",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "Abc_12345678",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "curriculum_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "stage_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/register",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"12345678\",\r\n    \"password\": \"Abc_12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/login",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/logout",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "send_otp",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_online}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/send_otp",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"send_otp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "verify_otp",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_online}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"otp\": \"455566\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/verify_otp",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"verify_otp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get_profile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_online}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/profile",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit_profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_online}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "full_name",
+											"value": "Ammar Gohar",
+											"type": "text"
+										},
+										{
+											"key": "curriculum_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "stage_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "img",
+											"type": "file",
+											"src": "/C:/Users/Ammar/Downloads/نبذة_عن_كتاب_شرح_ابن_عقيل_على_ألفية_ابن_مالك.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/profile/edit",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"profile",
+										"edit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "forgot_password",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"12345678\",\r\n    \"password\": \"Abc_12345678\",\r\n    \"password_confirmation\": \"Abc_12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/forgot_password",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"forgot_password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit_password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"12345678\",\r\n    \"password\": \"Abc_12345678\",\r\n    \"password_confirmation\": \"Abc_12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_online}}/auth/edit_password",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"auth",
+										"edit_password"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Stages",
+					"item": [
+						{
+							"name": "stages_index",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_online}}/stages",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"stages"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "stages_show",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_online}}/stages/1",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"stages",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Curriculums",
+					"item": [
+						{
+							"name": "curriculums_index",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_online}}/curriculums",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"curriculums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "curriculums_show",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_online}/curriculums/1",
+									"host": [
+										"{{url_online}"
+									],
+									"path": [
+										"curriculums",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Country_City",
+					"item": [
+						{
+							"name": "countries_cities_index",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_online}}/countries_cities",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"countries_cities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "countries_cities_show",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "lang",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url_online}}/countries_cities/1",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"countries_cities",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Experiences",
+					"item": [
+						{
+							"name": "experiences_per_teacher",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_online}}/experiences/3",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"experiences",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reviews",
+					"item": [
+						{
+							"name": "reviews_per_user",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_online}}/reviews/3",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"reviews",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Classes",
+					"item": [
+						{
+							"name": "classes_index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "lang",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"student\",\r\n    \"full_name\": \"Api Student\",\r\n    \"phone\": \"12345678\",\r\n    \"password\": \"Abc_12345678\",\r\n    \"date_of_birth\": \"2000-01-01\",\r\n    \"gender\": \"male\",\r\n    \"country_id\": \"1\",\r\n    \"stage_id\": \"1\"\r\n}"
+								},
+								"url": {
+									"raw": "{{url_online}}/classes/package",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"classes",
+										"package"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "classes_show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_online}}/classes/package/9",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"classes",
+										"package",
+										"9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "enrollments_index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token_local}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url_online}}/enrollments/private",
+									"host": [
+										"{{url_online}}"
+									],
+									"path": [
+										"enrollments",
+										"private"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Teachers",
+					"item": [
+						{
+							"name": "teachers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "teachers_show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					"// Test 1: Successful Request\r",
+					"pm.test(\"Status code is 200, 201, or 204\", function () {\r",
+					"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);\r",
+					"});\r",
+					"\r",
+					"// Test 2: Performance Check\r",
+					"pm.test(\"Response time is less than 2000ms\", function () {\r",
+					"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url_local",
+			"value": ""
+		},
+		{
+			"key": "token_local",
+			"value": ""
+		},
+		{
+			"key": "url_online",
+			"value": ""
+		},
+		{
+			"key": "token_online",
+			"value": ""
+		}
+	]
+}
